@@ -21,7 +21,7 @@ import { ToppingsService } from '../../services/toppings.service';
         (update)="onUpdate($event)"
         (remove)="onRemove($event)">
         <pizza-display
-          [pizza]="visualise">
+          [pizza]="visualize">
         </pizza-display>
       </pizza-form>
     </div>
@@ -29,7 +29,7 @@ import { ToppingsService } from '../../services/toppings.service';
 })
 export class ProductItemComponent implements OnInit {
   pizza: Pizza;
-  visualise: Pizza;
+  visualize: Pizza;
   toppings: Topping[];
 
   constructor(
@@ -65,7 +65,7 @@ export class ProductItemComponent implements OnInit {
     } else {
       toppings = this.pizza.toppings;
     }
-    this.visualise = { ...this.pizza, toppings };
+    this.visualize = { ...this.pizza, toppings };
   }
 
   onCreate(event: Pizza) {
