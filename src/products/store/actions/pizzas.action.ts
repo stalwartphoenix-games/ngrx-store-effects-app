@@ -1,5 +1,5 @@
 import { Action } from '@ngrx/store';
-import { Pizza } from 'src/products/models/pizza.model';
+import { Pizza } from '../../models/pizza.model';
 
 // load pizzas
 export const LOAD_PIZZAS = '[Products] Load Pizzas'; 
@@ -8,6 +8,7 @@ export const LOAD_PIZZAS_SUCCESS = '[Products] Load Pizzas';
 
 export class LoadPizzas implements Action {
     readonly type = LOAD_PIZZAS;
+    payload: Pizza[];
 }
 
 export class LoadPizzasFail implements Action {
