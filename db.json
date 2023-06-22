@@ -66,12 +66,20 @@
           "name": "chili"
         },
         {
+          "id": 10,
+          "name": "pepperoni"
+        },
+        {
+          "id": 1,
+          "name": "anchovy"
+        },
+        {
           "id": 2,
           "name": "bacon"
         },
         {
-          "id": 10,
-          "name": "pepperoni"
+          "id": 5,
+          "name": "mozzarella"
         }
       ],
       "id": 1

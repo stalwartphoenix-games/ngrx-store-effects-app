@@ -7,6 +7,7 @@ import * as fromStore from '../../store';
 
 @Component({
   selector: 'products',
+  changeDetection: ChangeDetectionStrategy.OnPush,
   styleUrls: ['products.component.scss'],
   template: `
     <div class="products">
